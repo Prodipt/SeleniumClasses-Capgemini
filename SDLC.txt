@@ -1,0 +1,47 @@
+SDLC
+    Req. Analysis
+    Feasibility
+    Design
+    Coding
+    Testing
+    Deployment 
+    Maintainence
+
+Software Testing
+Checking of software works as per user requirements
+
+Ways - Manual
+     - Automation
+
+Disadvantages of Manual
+    - Time Consuming
+    - Tedious, Monotonous
+    - Consistency
+    - Depends on Manpower
+
+Testing is a software / application with the help of tools / technology
+
+Test Case
+Open    Facebook
+Enter   Valid usernmae
+Enter   Valid password
+Check   Login
+
+Test Script 
+driver. get("https://www.facebook.com")
+driver.find_element( will u later)
+
+Write script once, use it manhy times
+
+
+Advantages of Automation   
+    - Faster Execution
+    - Less Manpower
+    - Consistency & Accuracy
+    - Reusability
+
+Disadvantages of Automation
+    -Initial cost is highgith
+    - Technical Issues
+    - Programming Knowledge required
+    - Human Judgement is required 
