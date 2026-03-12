@@ -45,3 +45,33 @@ Disadvantages of Automation
     - Technical Issues
     - Programming Knowledge required
     - Human Judgement is required 
+
+Tools
+    - Selenium
+    - QTP
+    - Test_Complete
+    - Playwright
+
+Selenium
+- In 2004
+- Josh Huggins
+- Named as a this to cure the "Mercury Interactive" as a joke in the testing community.
+- Free Tool with no customer support
+
+Selenium RC(2006)
+- By Paul Hammant
+- Its Complex (Because we have to sownload it separately)
+- Not in used because its complex.
+
+Selenium IDE()
+- Record and PlayBack Tool
+- Just for learning purpose, not for industrial use
+
+Selenium WebDriver(2008)
+- Cannot do parallel execution
+- Only for web application
+
+Selenium Grid(2011)
+- hub to hub
+- Industrial level use
+- Handle Parallel execution
