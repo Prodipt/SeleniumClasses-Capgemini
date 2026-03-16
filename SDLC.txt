@@ -60,7 +60,7 @@ Selenium
 
 Selenium RC(2006)
 - By Paul Hammant
-- Its Complex (Because we have to sownload it separately)
+- Its Complex (Because we have to download it separately)
 - Not in used because its complex.
 
 Selenium IDE()

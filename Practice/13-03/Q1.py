@@ -14,6 +14,8 @@ driver.find_element(By.LINK_TEXT, "Downloads").click()
 sleep(2)
 driver.find_element(By.PARTIAL_LINK_TEXT, "other languages exist").click()
 sleep(2)
+driver.find_element(By.LINK_TEXT, "Register now!").click()
+
 print(driver.title)
 
 driver.quit()
