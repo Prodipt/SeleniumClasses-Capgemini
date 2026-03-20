@@ -24,18 +24,7 @@ second = driver.find_element(By.XPATH, "(//select[@class= 'form-control select f
 s = Select(second)
 s.select_by_index(2)
 
-# driver.find_element(By.XPATH, "button[@type='button']").click()
+driver.find_element(By.XPATH, "//button[@class='app-btn-box']").click()
 
-# driver.find_element(By.ID, 'twotabsearchtextbox').send_keys("Shoes for men")
-#
-# sleep(2)
-# options = driver.find_elements(By.XPATH, "//div[@class='s-suggestion-container']")
-#
-# for i in options:
-#     print(i.text)
-#
-# # driver.find_element(By.XPATH, "(//div[@class='s-suggestion-container'])[10]").click()
-# options[9].click()
-#
 # sleep(10)
 # driver.quit()
