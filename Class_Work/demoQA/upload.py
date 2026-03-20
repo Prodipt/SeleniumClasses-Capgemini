@@ -51,4 +51,10 @@ driver.find_element(By.XPATH, "//textarea[@placeholder= 'Current Address']").sen
 
 driver.find_element(By.ID, "uploadPicture").send_keys(r"C:\Users\praso\Downloads\20240222_213236.jpg")
 
-driver.find_element(By.ID, "file-submit").click()
+# driver.find_element(By.ID, "state").click()
+
+dd = driver.find_element(By.ID, "city")
+
+ss = Select(dd)
+
+ss.select_by_index(2)
