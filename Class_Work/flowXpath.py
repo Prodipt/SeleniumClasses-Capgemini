@@ -1,7 +1,9 @@
 from time import sleep
+from tkinter import Scrollbar
 
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.actions.wheel_input import ScrollOrigin
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
@@ -26,14 +28,27 @@ driver.maximize_window()
 
 
 # sleep(2)
-div1 = driver.find_element(By.XPATH, "(//div[contains(@class,'a-cardui _quad-multi-asin-card-v2_fluid_fluidCard')])[1]")
+# div1 = driver.find_element(By.XPATH, "(//div[contains(@class,'a-cardui _quad-multi-asin-card-v2_fluid_fluidCard')])[1]")
 actions = ActionChains(driver)
 
 # To Pause the execution between two actions - Good to use  pause whenever required!!!
-actions.scroll_to_element(div1).perform()
-sleep(5)
+# actions.scroll_to_element(div1).perform()
+# sleep(5)
 
 # How much you want to scroll on the screen using x and y values
-actions.scroll_by_amount(0,400).perform()
+# actions.scroll_by_amount(0,400).perform()
 
-actions.scroll_by_amount(0,400).perform()
+# actions.scroll_by_amount(0,400).perform()
+
+# origin= ScrollOrigin.from_element(div1)
+#
+# actions.scroll_from_origin(origin, 0, 1000).perform()
+#
+# sleep(3)
+#
+# driver.quit()
+
+ele = driver.find_element(By.PARTIAL_LINK_TEXT, "Account & Lists")
+# sleep(3)
+actions.move_to_element(ele).pause(2).perform()
+
