@@ -32,7 +32,7 @@ action.click(cleartripi).perform()
 
 shopufu = driver.find_element(By.XPATH, "((//div[@class='ykJuJZ'])[2]/following::a)[3]")
 action.click(shopufu).perform()
-
+print("\n")
 for i in range(4):
     driver.switch_to.window(driver.window_handles[i])
     print(driver.title)
