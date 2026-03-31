@@ -11,7 +11,7 @@ driver = Chrome(options=o)
 driver.get("https://www.flipkart.com/")
 driver.maximize_window()
 
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 20)
 
 wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "b3wTlE"))).click()
 

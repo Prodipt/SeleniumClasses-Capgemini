@@ -22,4 +22,4 @@ Due = driver.find_element(By.XPATH, "(//td[text()='Tim'])[1]//following-sibling:
 print(Due.text)
 
 
-driver.close()
+# driver.close()

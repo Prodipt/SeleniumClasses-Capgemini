@@ -13,7 +13,7 @@ driver = Chrome(options=o)
 driver.implicitly_wait(19)
 driver.get("file:///C:/Users/praso/OneDrive/Documents/GenAI/Python/Capgemini-Selenium_Python/html%20file/page1.html")
 
-driver.maximize_window()
+# driver.maximize_window()
 
 actions = ActionChains(driver)
 

@@ -28,3 +28,4 @@ icon = driver.find_element(By.XPATH, "(//img[@class= 'ng-star-inserted'])[1]")
 
 actions.click_and_hold(icon).pause(4).release().perform()
 
+driver.close()

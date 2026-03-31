@@ -22,3 +22,6 @@ print("CheckBox 1:", checkbox1.is_selected())
 checkbox2 = driver.find_element(By.XPATH, "//input[@type='checkbox'][2]")
 
 print("CheckBox 2:", checkbox2.is_selected())
+
+
+driver.close()

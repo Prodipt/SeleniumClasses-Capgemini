@@ -1,5 +1,4 @@
 from time import sleep
-from tkinter import Scrollbar
 
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.action_chains import ActionChains

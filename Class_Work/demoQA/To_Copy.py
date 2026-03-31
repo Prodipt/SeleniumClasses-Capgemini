@@ -13,7 +13,6 @@ driver.get("https://demoqa.com/text-box")
 ele1 = driver.find_element(By.XPATH, "//textarea[@placeholder= 'Current Address']")
 ele1.send_keys("Jaipur")
 ele1.send_keys(Keys.CONTROL + 'A')
-# ele1.send_keys(Keys.A)
 ele1.send_keys(Keys.CONTROL + 'C')
 
 

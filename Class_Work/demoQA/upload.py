@@ -42,19 +42,19 @@ driver.find_element(By.XPATH, "//div[text() = 27]").click()
 driver.find_element(By.XPATH, "//textarea[@placeholder= 'Current Address']").send_keys("Jaipur")
 
 
-# driver.find_element(By.ID, "uploadPicture").click()
 
 
-# d1 = Select(driver.find_element(By.ID, "react-select-3-placeholder"))
-
+d1 = driver.find_element(By.ID, "react-select-3-placeholder")
+d1.click()
+# driver.find_element(By.XPATH,)
 # d1.select_by_visible_text("NCR")
 
 driver.find_element(By.ID, "uploadPicture").send_keys(r"C:\Users\praso\Downloads\20240222_213236.jpg")
 
 # driver.find_element(By.ID, "state").click()
+#
+# dd = driver.find_element(By.ID, "city")
+# dd.click()
+# ss = Select(dd)
 
-dd = driver.find_element(By.ID, "city")
-
-ss = Select(dd)
-
-ss.select_by_index(2)
+# ss.select_by_index(2)

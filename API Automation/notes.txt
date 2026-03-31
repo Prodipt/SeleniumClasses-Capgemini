@@ -1,0 +1,33 @@
+📌 API Basics (Short Notes)
+🔹API
+    Bridge between client and server
+    Used to send request & get response
+    Works over HTTP
+🔹HTTP Methods
+    GET → Fetch data
+    POST → Create data
+    PUT → Update full data
+    PATCH → Update partial data
+    DELETE → Remove data
+🔹Headers
+    Extra info sent with request
+    Key-value format
+    Examples:
+    Content-Type: application/json
+    Authorization: Bearer token
+🔹Important Status Codes
+    200 → OK (success)
+    201 → Created
+    400 → Bad request
+    401 → Unauthorized
+    403 → Forbidden
+    404 → Not found
+    500 → Server error
+
+
+ 28-03-2026 (Saturday)
+
+1. redirection purposes (300 series)
+2. important 200 and 400 series, 404, 401, 403
+3. 500 series is server side, we cannot not do anything from our side
+4. Three types of variables: environment variables, global variables,

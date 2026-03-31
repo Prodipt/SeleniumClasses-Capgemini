@@ -13,22 +13,22 @@ driver.maximize_window()
 sleep(2)
 
 
-# driver.find_element(By.LINK_TEXT, "Mobiles").click()
+driver.find_element(By.LINK_TEXT, "Mobiles").click()
 
-# driver.find_element(By.PARTIAL_LINK_TEXT, "Releases").click()
+driver.find_element(By.PARTIAL_LINK_TEXT, "Releases").click()
 
-# sleep(2)
+sleep(2)
 
-# driver.back()
-# sleep(1)
-# search = driver.find_element(By.ID, "twotabsearchtextbox")
-# search.send_keys('Shirt')
-#
-# sleep(1)
-#
-# searchButton = driver.find_element(By.ID, "nav-search-submit-button")
-# searchButton.click()
-# sleep(1)
+driver.back()
+sleep(1)
+search = driver.find_element(By.ID, "twotabsearchtextbox")
+search.send_keys('Shirt')
+
+sleep(1)
+
+searchButton = driver.find_element(By.ID, "nav-search-submit-button")
+searchButton.click()
+sleep(1)
 
 
 # driver.find_element(By.XPATH, "//span[text()='Helmets']").click()
@@ -38,7 +38,7 @@ sleep(1)
 # driver.find_element(By.XPATH, "//a[contains(., 'Sell under Amazon Accelerator')]").click()
 # driver.find_element(By.XPATH, "//a[contains(@href, 'accelerator')]").click()
 
-# driver.find_element(By.XPATH, "//a[contains(., 'Sell under Amazon Accelerator')]").click()
+driver.find_element(By.XPATH, "//a[contains(., 'Sell under Amazon Accelerator')]").click()
 
 driver.find_element(By.XPATH, "(//li[@class='nav_first'])[3]").click()
 

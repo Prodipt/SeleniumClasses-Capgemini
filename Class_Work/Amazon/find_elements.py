@@ -14,14 +14,14 @@ driver.maximize_window()
 
 driver.implicitly_wait(15)
 
-# search = driver.find_element(By.ID, "twotabsearchtextbox")
-# search.send_keys('Witch')
-#
-# searchButton = driver.find_element(By.ID, "nav-search-submit-button")
-# searchButton.click()
-#
-# products = driver.find_elements(By.XPATH, '//h2[@class="a-size-medium a-spacing-none a-color-base a-text-normal"]')
-# print(len(products))
+search = driver.find_element(By.ID, "twotabsearchtextbox")
+search.send_keys('Witch')
+
+searchButton = driver.find_element(By.ID, "nav-search-submit-button")
+searchButton.click()
+
+products = driver.find_elements(By.XPATH, '//h2[@class="a-size-medium a-spacing-none a-color-base a-text-normal"]')
+print(len(products))
 
 # print(products[5].text)
 

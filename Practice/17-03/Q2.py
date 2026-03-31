@@ -18,8 +18,6 @@ wait = WebDriverWait(driver, 10)
 wait.until(
     EC.visibility_of_element_located((By.ID,'addNewRecordButton'))).click()
 
-
-
 wait.until(
     EC.visibility_of_element_located((By.XPATH, "//input[@placeholder= 'First Name']"))).send_keys("Why Should I tell you.")
 
