@@ -1,4 +1,4 @@
-
+import pytest
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.by import By
 
@@ -27,20 +27,21 @@ def test_fname2():
     ele.send_keys(" Prasoon")
     actual = ele.get_attribute('value')
     assert expected == actual, 'Not Equal'
-#
-# def test_fname3():
-#     expected = "xyz@gmail.com"
-#     actual = driver.find_element(By.XPATH, "//input[@id= 'Email']").send_keys("xyz@gmail.com")
-#     assert expected == actual , 'Not Equal'
-#
-# def test_fname4():
-#     expected = "1234567890"
-#     actual = driver.find_element(By.XPATH, "//input[@id= 'Password']").send_keys("1234567890")
-#     assert expected == actual , 'Not Equal'
-#
-# def test_fname5():
-#     expected = "1234567890"
-#     actual = driver.find_element(By.XPATH, "//input[@id= 'ConfirmPassword']").send_keys("1234567890")
-#     assert expected == actual , 'Not Equal'
 
-# driver.close()
+def test_fname3():
+    expected = "xyz@gmail.com"
+    actual = driver.find_element(By.XPATH, "//input[@id= 'Email']").send_keys("xyz@gmail.com")
+    assert expected == actual , 'Not Equal'
+
+@pytest.mark.regression
+def test_fname4():
+    expected = "1234567890"
+    actual = driver.find_element(By.XPATH, "//input[@id= 'Password']").send_keys("1234567890")
+    assert expected == actual , 'Not Equal'
+
+def test_fname5():
+    expected = "1234567890"
+    actual = driver.find_element(By.XPATH, "//input[@id= 'ConfirmPassword']").send_keys("1234567890")
+    assert expected == actual , 'Not Equal'
+
+driver.close()

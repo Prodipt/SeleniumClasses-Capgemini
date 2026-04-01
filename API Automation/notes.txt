@@ -31,3 +31,6 @@
 2. important 200 and 400 series, 404, 401, 403
 3. 500 series is server side, we cannot not do anything from our side
 4. Three types of variables: environment variables, global variables,
+
+
+we can organize the files using folder
