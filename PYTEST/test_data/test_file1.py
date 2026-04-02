@@ -24,6 +24,3 @@ def test_01(u, p, e, setup):
 
     assert e in page , driver.refresh()
     driver.back()
-
-# def test_close():
-#     driver.close()
