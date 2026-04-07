@@ -24,5 +24,5 @@ def test_01():
 
 
 
-@pytest.mark.skipif(actual1 == expected1, reason="Both are equal")
-def test_02():
+# @pytest.mark.skipif(actual1 == expected1, reason="Both are equal")
+# def test_02():

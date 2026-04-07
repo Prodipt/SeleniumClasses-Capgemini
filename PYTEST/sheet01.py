@@ -17,15 +17,16 @@ ws['C1'] = 'RANK'
 # wb.save('sample.xlsx')   # It will save in the local directory
 
 # Append used to add data in the worksheet
-ws.append(['user1', '1231', '1'] )
-ws.append(['user2', '1232', '2'] )
-ws.append(['user3', '1263', '3'] )
-ws.append(['user4', '1233', '4'] )
-
-wb.save('sample.xlsx')   #To save the file
+ws.append(['standard_user', 'secret_sauce', 'Products'] )
+ws.append(['standard_user', 'secret_sauce', 'Products'] )
+# ws.append(['wrong_user', 'wrong_password', 'Products'] )
 
 
-ws.delete_rows(2)
+
+# wb.save('sample.xlsx')   #To save the file
+
+
+# ws.delete_rows(2)
 
 for row in ws.iter_rows(values_only=True): #To Iterate in the Excel Sheet
     print(row)
