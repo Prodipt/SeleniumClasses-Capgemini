@@ -18,6 +18,8 @@ base = "https://www.shoppersstack.com/shopping"
 token = ""
 UserId = ""
 
+session = requests.Session()
+
 def register():
     # Request body for user registration
     body = {
@@ -35,7 +37,7 @@ def register():
 
     # Sending POST request to create a new shopper
     # verify=False skips SSL certificate validation (used only for testing)
-    response = requests.post(f"{base}/shoppers", json=body, verify=False)
+    response = session.post(f"{base}/shoppers", json=body, verify=False)
 
     # Print response status and data to verify registration
     print(response.status_code)
@@ -56,7 +58,7 @@ def user_login():
     }
 
     # Sending POST request to login user
-    response = requests.post(f"{base}/users/login", json=body, verify=False)
+    response = session.post(f"{base}/users/login", json=body, verify=False)
 
     # Print response for debugging/verification
     print(response.status_code)
@@ -77,7 +79,7 @@ def get_user_info_byID():
 
     # Sending GET request to fetch user details by userId
     # Header is required because this is a protected API
-    response = requests.get(
+    response = session.get(
         f"{base}/shoppers/{UserId}",
         headers=header,
         verify=False
